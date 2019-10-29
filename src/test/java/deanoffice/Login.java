@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.opera.OperaDriver;
 
 import java.util.concurrent.TimeUnit;
 
@@ -14,6 +15,7 @@ import static org.hamcrest.core.StringContains.containsString;
 
 public class Login {
     ChromeDriver driver;
+    OperaDriver operaDriver;
 
     @Before
     public void setup() {

@@ -4,16 +4,13 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
 public class Groups extends Login {
-    
+
     @Test
     public void InactiveGroups() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
@@ -49,22 +46,6 @@ public class Groups extends Login {
     }
 
     @Test
-    public void DeleteGroupsWithStudents() throws InterruptedException {
-        GoTo goTo = new GoTo(driver);
-        Login();
-        goTo.Groups();
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[1]/span[2]")).click();
-        //Вибрав групу натиснувши checkbox
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/div/div/div/button[1]")).click();
-        //Натиснув Delete
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/delete-group/modal-wrapper/div/div/div/form/div[2]/button[1]")).click();
-        //Натиснув Delete
-        String actual = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/simple-notifications/div/simple-notification/div/div/div[1]")).getText();
-        assertThat(actual, containsString("Помилка"));
-        //Порівнюю чи виводиться повідомлення про помилку
-    }
-
-    @Test
     public void DeleteSomeGroups() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
@@ -89,6 +70,29 @@ public class Groups extends Login {
         assertThat(actual, containsString(expected));
         //Порівнюю результати....Робить через раз
     }
+
+    @Test
+    public void DeleteGroupsWithStudents() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.Groups();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span")).click();
+        //Натиснув на три паралельні полоски
+        WebElement search = driver.findElement(By.id("filterText"));
+        search.sendKeys("АКІТ-159");
+        //Ввів значення для пошуку
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[1]/span[2]")).click();
+        //Вибрав групу натиснувши checkbox
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/div/div/div/button[1]")).click();
+        //Натиснув Delete
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/delete-group/modal-wrapper/div/div/div/form/div[2]/button[1]")).click();
+        //Натиснув Delete
+        String actual = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/simple-notifications/div/simple-notification/div/div/div[1]")).getText();
+        assertThat(actual, containsString("Помилка"));
+        //Порівнюю чи виводиться повідомлення про помилку
+    }
+
 
     @Test
     public void AddNewGroups() throws InterruptedException {
@@ -139,6 +143,7 @@ public class Groups extends Login {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.Groups();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
     }
 
