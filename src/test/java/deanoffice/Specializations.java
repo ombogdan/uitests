@@ -118,10 +118,6 @@ public class Specializations extends Login{
         //Вибрав спеціалізацію натиснувши на checkbox
         driver.findElement(By.cssSelector("#app > div > specialization > div > div > div > div > div:nth-child(2) > button.btn.btn-danger")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/delete-specialization/modal-wrapper/div/div/div/div[3]/button[1]")).click();
-
-
     }
-
-
 
 }

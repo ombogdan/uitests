@@ -36,4 +36,6 @@ class GoTo {
     void editSpecializations() {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/div/div/div/div/div[2]/button[2]")).click();
     }
+
+
 }
