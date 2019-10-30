@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="84d59a56-d819-4301-a66e-12f94a5238e0" name="Default Changelist" comment="" />
+=======
+    <list default="true" id="84d59a56-d819-4301-a66e-12f94a5238e0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/GoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/GoTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/Specializations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/Specializations.java" afterDir="false" />
+    </list>
+>>>>>>> d8cfd536277bdf5b3f16c9f75a0b8cfaea20382e
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,9 +29,12 @@
     <expand />
     <select />
   </component>
+<<<<<<< HEAD
   <component name="FavoritesManager">
     <favorites_list name="uitests" />
   </component>
+=======
+>>>>>>> d8cfd536277bdf5b3f16c9f75a0b8cfaea20382e
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -204,9 +214,12 @@
       </list>
     </recent_temporary>
   </component>
+<<<<<<< HEAD
   <component name="StructureViewFactory">
     <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,SHOW_NON_PUBLIC,SHOW_INHERITED" />
   </component>
+=======
+>>>>>>> d8cfd536277bdf5b3f16c9f75a0b8cfaea20382e
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -233,7 +246,11 @@
       <workItem from="1572359121058" duration="105000" />
       <workItem from="1572366120753" duration="30000" />
       <workItem from="1572366294782" duration="80000" />
+<<<<<<< HEAD
       <workItem from="1572377084161" duration="18873000" />
+=======
+      <workItem from="1572377084161" duration="17765000" />
+>>>>>>> d8cfd536277bdf5b3f16c9f75a0b8cfaea20382e
     </task>
     <servers />
   </component>
