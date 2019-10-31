@@ -41,7 +41,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CoursesForGroups.selec">
+  <component name="RunManager" selected="JUnit.CoursesForGroups.editCourse">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -58,6 +58,22 @@
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="CoursesForGroups.editCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="deanoffice" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.CoursesForGroups" />
+      <option name="METHOD_NAME" value="editCourse" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="CoursesForGroups.selec" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
@@ -123,29 +139,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Groups.RestoreOneGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="deanoffice" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.Groups" />
-      <option name="METHOD_NAME" value="RestoreOneGroup" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CoursesForGroups.editCourse" />
         <item itemvalue="JUnit.CoursesForGroups.selec" />
         <item itemvalue="JUnit.CoursesForGroups.selectTeacheeForCourses" />
         <item itemvalue="JUnit.CoursesForGroups.setCoursesIfExist" />
         <item itemvalue="JUnit.CoursesForGroups.setCourses" />
-        <item itemvalue="JUnit.Groups.RestoreOneGroup" />
       </list>
     </recent_temporary>
   </component>
@@ -159,7 +159,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572470991892</updated>
-      <workItem from="1572470993396" duration="10817000" />
+      <workItem from="1572470993396" duration="11322000" />
     </task>
     <servers />
   </component>

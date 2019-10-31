@@ -89,10 +89,20 @@ public class CoursesForGroups extends Login {
 
     }
 
+//    @Test
+//    public void editData() throws InterruptedException {
+//        selectGroup();
+//        driver.findElement(By.xpath()).SendKeys(yourDateTime.ToString("ddd, dd.MM.yyyy",CultureInfo.CreateSpecificCulture("en-US")));
+//    }
+
     @Test
-    public void editData() throws InterruptedException {
+    public void editCourse() throws InterruptedException {
         selectGroup();
-        driver.findElement(By.xpath()).SendKeys(yourDateTime.ToString("ddd, dd.MM.yyyy",CultureInfo.CreateSpecificCulture("en-US")));
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[4]/added-courses/div/div/table/tbody/tr[1]/td[9]/button")).click();
+        new Select(driver.findElement(By.id("knowledgeControl"))).selectByIndex(5);
+        driver.findElement(By.xpath("/html/body/modal-container/div/div/edit-dialog/div[2]/div/div/button[1]")).click();
+        String actual = driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[4]/added-courses/div/div/table/tbody/tr[1]/td[3]")).getText();
+        assertThat("державний іспит", containsString(actual));
     }
 
 }
