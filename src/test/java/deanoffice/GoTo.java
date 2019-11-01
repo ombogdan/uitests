@@ -6,6 +6,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 class GoTo {
     private ChromeDriver driver;
 
+
     GoTo(ChromeDriver driver) {
         this.driver = driver;
     }
@@ -30,6 +31,13 @@ class GoTo {
     void InactiveGroups() {
         driver.findElement(By.xpath("//*[@id=\"mat-slide-toggle-1\"]/label/div")).click();
 
+    }
+    void Specializations() {
+        driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();
+        driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[2]")).click();
+    }
+    void editSpecializations() {
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/div/div/div/div/div[2]/button[2]")).click();
     }
 
     void Subjects() {
