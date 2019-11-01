@@ -19,12 +19,15 @@ class GoTo {
     void Active() {
         driver.findElement(By.xpath("//*[@id=\"sidebar\"]/div[2]/div/div/ul/li[7]/a/tab-heading")).click();
     }
+
     void Edit() {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/div/div/div/button[2]")).click();
     }
+
     void SelectFirstGroup() {
         driver.findElement(By.className("ag-selection-checkbox")).click();
     }
+
     void InactiveGroups() {
         driver.findElement(By.xpath("//*[@id=\"mat-slide-toggle-1\"]/label/div")).click();
 
@@ -37,5 +40,14 @@ class GoTo {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/div/div/div/div/div[2]/button[2]")).click();
     }
 
+    void Subjects() {
+        driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();
+        driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[4]")).click();
+    }
+
+    void CoursesForGroups() {
+        driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();
+        driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[5]")).click();
+    }
 
 }
