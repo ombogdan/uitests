@@ -1,4 +1,4 @@
-package deanoffice;
+package deanoffice.settings;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.Before;
@@ -14,7 +14,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
 public class Login {
-    ChromeDriver driver;
+    public ChromeDriver driver;
     OperaDriver operaDriver;
 
     @Before
@@ -25,7 +25,7 @@ public class Login {
 
     }
 
-    void Login() {
+    public void Login() {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://localhost:4200/login");
         WebElement username = driver.findElementByName("username");

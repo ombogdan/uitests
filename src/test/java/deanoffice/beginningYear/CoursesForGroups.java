@@ -1,11 +1,11 @@
-package deanoffice;
+package deanoffice.beginningYear;
 
+import deanoffice.settings.GoTo;
+import deanoffice.settings.Login;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
 
-
-import java.util.concurrent.TimeUnit;
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
@@ -16,7 +16,7 @@ public class CoursesForGroups extends Login {
     public void selectGroup() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.CoursesForGroups();
+        goTo.coursesForGroups();
         new Select(driver.findElement(By.id("group"))).selectByIndex(1);
 
     }

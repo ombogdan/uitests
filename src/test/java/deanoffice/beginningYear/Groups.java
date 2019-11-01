@@ -1,5 +1,6 @@
-package deanoffice;
-import deanoffice.Login;
+package deanoffice.beginningYear;
+import deanoffice.settings.GoTo;
+import deanoffice.settings.Login;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -15,7 +16,7 @@ public class Groups extends Login {
     public void InactiveGroups() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.Groups();
+        goTo.groups();
         driver.findElement(By.xpath("//*[@id=\"mat-slide-toggle-1\"]/label/div")).click();
         String actual = driver.findElement(By.xpath("//*[@id=\"mat-slide-toggle-1\"]/label/span\n")).getText();
         assertThat(actual, containsString("Неактивні групи"));
@@ -26,7 +27,7 @@ public class Groups extends Login {
     public void DeleteGroupsWithoutStudents() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.Groups();
+        goTo.groups();
         String actual = driver.findElement(By.className("ag-cell-value")).getText();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[1]/span[2]")).click();
         //Вибрав групу натиснувши checkbox
@@ -35,7 +36,7 @@ public class Groups extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/delete-group/modal-wrapper/div/div/div/form/div[2]/button[1]")).click();
         //Натиснув Delete
         Thread.sleep(2000);
-        goTo.InactiveGroups();
+        goTo.inactiveGroups();
         //натиcнув на слайдер
         Thread.sleep(2000);
         String expected= driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[2]")).getText();
@@ -49,10 +50,10 @@ public class Groups extends Login {
     public void DeleteSomeGroups() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.Groups();
+        goTo.groups();
         String actual = driver.findElement(By.className("ag-cell-value")).getText();
         //Записав значення першої групи
-        goTo.SelectFirstGroup();
+        goTo.selectFirstGroup();
         //Вибрав першу групу натиснувши checkbox
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[2]/div[1]/span/span[1]/span[2]")).click();
         //Вибрав другу групу натиснувши checkbox
@@ -75,7 +76,7 @@ public class Groups extends Login {
     public void DeleteGroupsWithStudents() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.Groups();
+        goTo.groups();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span")).click();
         //Натиснув на три паралельні полоски
         WebElement search = driver.findElement(By.id("filterText"));
@@ -99,7 +100,7 @@ public class Groups extends Login {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.Groups();
+        goTo.groups();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/div/div/div/button[3]")).click();
         WebElement reason = driver.findElementByXPath("//*[@id=\"name\"]");
         reason.sendKeys("autotest");
@@ -116,12 +117,12 @@ public class Groups extends Login {
     public void RestoreOneGroup() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.Groups();
-        goTo.InactiveGroups();
+        goTo.groups();
+        goTo.inactiveGroups();
         Thread.sleep(2000);
         String actual = driver.findElement(By.className("ag-cell-value")).getText();
         //Записав значення першої групи
-        goTo.SelectFirstGroup();
+        goTo.selectFirstGroup();
         //Вибрав першу групу натиснувши checkbox
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/div/div/div/button")).click();
         //Натиснув Відновити
@@ -142,7 +143,7 @@ public class Groups extends Login {
     public void SortField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.Groups();
+        goTo.groups();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
     }
@@ -151,7 +152,7 @@ public class Groups extends Login {
     public void SearchByOneField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.Groups();
+        goTo.groups();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span")).click();
         //Натиснув на три паралельні полоски
         WebElement search = driver.findElement(By.id("filterText"));
