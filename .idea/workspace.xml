@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-<<<<<<< HEAD
-    <list default="true" id="84d59a56-d819-4301-a66e-12f94a5238e0" name="Default Changelist" comment="" />
-=======
-    <list default="true" id="84d59a56-d819-4301-a66e-12f94a5238e0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/GoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/GoTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/Specializations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/Specializations.java" afterDir="false" />
+    <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
->>>>>>> d8cfd536277bdf5b3f16c9f75a0b8cfaea20382e
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand />
-    <select />
-  </component>
-<<<<<<< HEAD
-  <component name="FavoritesManager">
-    <favorites_list name="uitests" />
-  </component>
-=======
->>>>>>> d8cfd536277bdf5b3f16c9f75a0b8cfaea20382e
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -45,39 +21,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IgnoredFileRootStore">
-    <option name="generatedRoots">
-      <set>
-        <option value="C:\Users\omelc\.anaProjects\IdeaProjects\uitests" />
-        <option value="C:\Users\omelc\.anaProjects\IdeaProjects\uitests\.idea" />
-      </set>
-    </option>
-  </component>
-  <component name="ProjectId" id="1RsAagMMd7jmM9g8TgTeWCioxY8" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectId" id="1T0N4rKLq4ziCd8KWWBuyvc1Pgh" />
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="Lombok plugin" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\omelc\IdeaProjects\uitests\src\test\java" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\omelc\IdeaProjects\uitests\src\test\java\deanoffice" />
-      <recent name="C:\Users\omelc\IdeaProjects\uitests\src\test\java\deanoffice\Settings" />
-      <recent name="C:\Users\omelc\IdeaProjects\uitests\src\test\java\deanoffice\TheBeginningOfTheYear" />
-    </key>
+    <property name="settings.editor.selected.configurable" value="configurable.group.language" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -91,166 +49,61 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Course.SearchSubjects">
-    <configuration name="Course.SearchByOneField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.Course" />
-      <option name="METHOD_NAME" value="SearchByOneField" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <option name="REDIRECT_INPUT" value="true" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Course.SearchSubjects" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.Course" />
-      <option name="METHOD_NAME" value="SearchSubjects" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <option name="REDIRECT_INPUT" value="true" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Course.SortField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.Course" />
-      <option name="METHOD_NAME" value="SortField" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <option name="REDIRECT_INPUT" value="true" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Specializations.CreateAndChooseAQualification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.Specializations" />
-      <option name="METHOD_NAME" value="CreateAndChooseAQualification" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <option name="REDIRECT_INPUT" value="true" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Specializations.DeleteCompetences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.Specializations" />
-      <option name="METHOD_NAME" value="DeleteCompetences" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <option name="REDIRECT_INPUT" value="true" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+  <component name="RunManager">
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
+      <module name="uitests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.Courses.java" />
       <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <option name="PARAMETERS" value="" />
-      <option name="REDIRECT_INPUT" value="true" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.Course.SearchSubjects" />
-        <item itemvalue="JUnit.Course.SearchByOneField" />
-        <item itemvalue="JUnit.Course.SortField" />
-        <item itemvalue="JUnit.Specializations.DeleteCompetences" />
-        <item itemvalue="JUnit.Specializations.CreateAndChooseAQualification" />
-      </list>
-    </recent_temporary>
+    <configuration name="java" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
+      <module name="uitests" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.Courses.java" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
-<<<<<<< HEAD
-  <component name="StructureViewFactory">
-    <option name="ACTIVE_ACTIONS" value=",SHOW_FIELDS,SHOW_NON_PUBLIC,SHOW_INHERITED" />
-  </component>
-=======
->>>>>>> d8cfd536277bdf5b3f16c9f75a0b8cfaea20382e
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="84d59a56-d819-4301-a66e-12f94a5238e0" name="Default Changelist" comment="" />
-      <created>1570445494213</created>
+      <changelist id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="" />
+      <created>1572470991892</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1570445494213</updated>
-      <workItem from="1570445497663" duration="4703000" />
-      <workItem from="1570518408506" duration="130000" />
-      <workItem from="1570536514427" duration="1867000" />
-      <workItem from="1570538983739" duration="3339000" />
-      <workItem from="1570603119123" duration="3544000" />
-      <workItem from="1571136926573" duration="10891000" />
-      <workItem from="1571155229633" duration="356000" />
-      <workItem from="1571160113611" duration="8894000" />
-      <workItem from="1571647615071" duration="7610000" />
-      <workItem from="1571856445719" duration="212000" />
-      <workItem from="1572358613470" duration="122000" />
-      <workItem from="1572358771234" duration="23000" />
-      <workItem from="1572358818711" duration="284000" />
-      <workItem from="1572359121058" duration="105000" />
-      <workItem from="1572366120753" duration="30000" />
-      <workItem from="1572366294782" duration="80000" />
-<<<<<<< HEAD
-      <workItem from="1572377084161" duration="18873000" />
-=======
-      <workItem from="1572377084161" duration="17765000" />
->>>>>>> d8cfd536277bdf5b3f16c9f75a0b8cfaea20382e
+      <updated>1572470991892</updated>
+      <workItem from="1572470993396" duration="11322000" />
+      <workItem from="1572592871174" duration="2106000" />
     </task>
     <servers />
   </component>
@@ -269,13 +122,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <watches-manager>
-      <configuration name="JUnit">
-        <watch expression="driver.findElement(By.cssSelector(&quot;#name&quot;)).getTagName()" language="JAVA" />
-        <watch expression="qwer.getTagName()" language="JAVA" />
-      </configuration>
-    </watches-manager>
   </component>
 </project>
