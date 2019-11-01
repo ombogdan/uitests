@@ -13,7 +13,7 @@ import static org.hamcrest.core.StringContains.containsString;
 public class Groups extends Login {
 
     @Test
-    public void InactiveGroups() throws InterruptedException {
+    public void inactiveGroups() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.groups();
@@ -24,7 +24,7 @@ public class Groups extends Login {
 
     }
     @Test
-    public void DeleteGroupsWithoutStudents() throws InterruptedException {
+    public void deleteGroupsWithoutStudents() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.groups();
@@ -47,7 +47,7 @@ public class Groups extends Login {
     }
 
     @Test
-    public void DeleteSomeGroups() throws InterruptedException {
+    public void deleteSomeGroups() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.groups();
@@ -73,7 +73,7 @@ public class Groups extends Login {
     }
 
     @Test
-    public void DeleteGroupsWithStudents() throws InterruptedException {
+    public void deleteGroupsWithStudents() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.groups();
@@ -96,7 +96,7 @@ public class Groups extends Login {
 
 
     @Test
-    public void AddNewGroups() throws InterruptedException {
+    public void addNewGroups() throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         GoTo goTo = new GoTo(driver);
         Login();
@@ -114,7 +114,7 @@ public class Groups extends Login {
     }
 
     @Test
-    public void RestoreOneGroup() throws InterruptedException {
+    public void restoreOneGroup() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.groups();
@@ -140,7 +140,7 @@ public class Groups extends Login {
     }
 
     @Test
-    public void SortField() throws InterruptedException {
+    public void sortField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.groups();
@@ -149,7 +149,7 @@ public class Groups extends Login {
     }
 
     @Test
-    public void SearchByOneField() throws InterruptedException {
+    public void searchByOneField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.groups();

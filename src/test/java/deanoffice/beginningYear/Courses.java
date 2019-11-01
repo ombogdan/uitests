@@ -13,7 +13,7 @@ import static org.hamcrest.core.StringContains.containsString;
 public class  Courses extends Login {
 
     @Test
-    public void SortField() throws InterruptedException {
+    public void sortField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.subjects();
@@ -22,7 +22,7 @@ public class  Courses extends Login {
     }
 
     @Test
-    public void SearchByOneField() throws InterruptedException {
+    public void searchByOneField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.subjects();
@@ -39,7 +39,7 @@ public class  Courses extends Login {
     }
 
     @Test
-    public void SearchCourse() throws InterruptedException {
+    public void searchCourse() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.subjects();

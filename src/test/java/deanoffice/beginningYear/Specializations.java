@@ -11,7 +11,7 @@ import static org.hamcrest.core.StringContains.containsString;
 public class Specializations extends Login {
 
     @Test
-    public void SortField() throws InterruptedException {
+    public void sortField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.specializations();
@@ -20,7 +20,7 @@ public class Specializations extends Login {
     }
 
     @Test
-    public void SearchByOneField() throws InterruptedException {
+    public void searchByOneField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.specializations();
@@ -37,7 +37,7 @@ public class Specializations extends Login {
     }
 
     @Test
-    public void CreateNewCompetences() throws InterruptedException {
+    public void createNewCompetences() throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
 
         GoTo goTo = new GoTo(driver);
@@ -57,7 +57,7 @@ public class Specializations extends Login {
     }
 
     @Test
-    public void EditGeneralInformation() throws InterruptedException {
+    public void editGeneralInformation() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.specializations();
@@ -76,7 +76,7 @@ public class Specializations extends Login {
     }
     @Test
 
-    public void EditCurrentCompetences() throws InterruptedException {
+    public void editCurrentCompetences() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.specializations();
@@ -93,7 +93,7 @@ public class Specializations extends Login {
     }
 
     @Test
-    public void CreateAndChooseAQualification() throws InterruptedException {
+    public void createAndChooseAQualification() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.specializations();
@@ -101,15 +101,13 @@ public class Specializations extends Login {
         //Вибрав спеціалізацію натиснувши на checkbox
         qwer.click();
         goTo.editspecializations();
-
         driver.findElement(By.xpath("//*[@id=\"specialization-form-tabset\"]/ul/li[5]/a")).click();
-
-//        assertThat("Інженерія програмного забезпечення", containsString(expected));
+//      assertThat("Інженерія програмного забезпечення", containsString(expected));
 
     }
 
     @Test
-    public void DeleteCompetences() throws InterruptedException {
+    public void deleteCompetences() throws InterruptedException {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         GoTo goTo = new GoTo(driver);
         Login();

@@ -6,6 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.opera.OperaDriver;
 
 import java.util.concurrent.TimeUnit;
@@ -19,8 +20,10 @@ public class Login {
 
     @Before
     public void setup() {
+        ChromeOptions ops = new ChromeOptions();
+        ops.addArguments("--disable-notifications");
         WebDriverManager.chromedriver().setup();
-        driver = new ChromeDriver();
+        driver = new ChromeDriver(ops);
         driver.manage().window().maximize();
 
     }

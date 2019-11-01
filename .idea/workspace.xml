@@ -46,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Courses.SortField">
+  <component name="RunManager" selected="JUnit.Teachers.deleteTeacher">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -83,7 +83,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Courses.SortField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Courses.sortField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -95,7 +95,64 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
       <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Courses" />
-      <option name="METHOD_NAME" value="SortField" />
+      <option name="METHOD_NAME" value="sortField" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Specializations.createAndChooseAQualification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
+      <option name="METHOD_NAME" value="createAndChooseAQualification" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teachers.deleteTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
+      <option name="METHOD_NAME" value="deleteTeacher" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teachers.inactiveTeachers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
+      <option name="METHOD_NAME" value="inactiveTeachers" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -128,7 +185,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Courses.SortField" />
+        <item itemvalue="JUnit.Teachers.deleteTeacher" />
+        <item itemvalue="JUnit.Teachers.inactiveTeachers" />
+        <item itemvalue="JUnit.Specializations.createAndChooseAQualification" />
+        <item itemvalue="JUnit.Courses.sortField" />
         <item itemvalue="JUnit.Courses" />
       </list>
     </recent_temporary>
