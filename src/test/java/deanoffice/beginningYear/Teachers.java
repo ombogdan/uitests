@@ -116,6 +116,7 @@ public class Teachers extends Login {
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
         Thread.sleep(2000);
         assertThat("Прізвище", containsString(expected));
+
     }
 
 }
