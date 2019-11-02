@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Groups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Groups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/CoursesForGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/CoursesForGroups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Specializations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Specializations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -34,6 +33,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -52,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Teachers.deleteSomeTeacher">
+  <component name="RunManager" selected="JUnit.Teachers.addNewTeacher">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -89,7 +89,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Specializations.createAndChooseAQualification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Teachers.addNewTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -100,8 +100,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
-      <option name="METHOD_NAME" value="createAndChooseAQualification" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
+      <option name="METHOD_NAME" value="addNewTeacher" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -127,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teachers.deleteTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Teachers.editInformationAboutTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -139,14 +139,14 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
       <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
-      <option name="METHOD_NAME" value="deleteTeacher" />
+      <option name="METHOD_NAME" value="editInformationAboutTeacher" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teachers.inactiveTeachers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Teachers.editInformationForTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -158,7 +158,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
       <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
-      <option name="METHOD_NAME" value="inactiveTeachers" />
+      <option name="METHOD_NAME" value="editInformationForTeacher" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -191,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Teachers.addNewTeacher" />
+        <item itemvalue="JUnit.Teachers.editInformationAboutTeacher" />
+        <item itemvalue="JUnit.Teachers.editInformationForTeacher" />
         <item itemvalue="JUnit.Teachers.deleteSomeTeacher" />
         <item itemvalue="JUnit.Groups.deleteSomeGroups" />
-        <item itemvalue="JUnit.Teachers.deleteTeacher" />
-        <item itemvalue="JUnit.Teachers.inactiveTeachers" />
-        <item itemvalue="JUnit.Specializations.createAndChooseAQualification" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +211,7 @@
       <updated>1572470991892</updated>
       <workItem from="1572470993396" duration="11322000" />
       <workItem from="1572592871174" duration="2106000" />
-      <workItem from="1572709295847" duration="495000" />
+      <workItem from="1572709295847" duration="7536000" />
     </task>
     <servers />
   </component>
@@ -230,5 +230,26 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java</url>
+          <line>114</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

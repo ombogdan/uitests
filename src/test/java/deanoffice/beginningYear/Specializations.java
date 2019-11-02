@@ -65,7 +65,6 @@ public class Specializations extends Login {
         //Вибрав групу натиснувши на checkbox
         goTo.editspecializations();
         new Select (driver.findElement(By.id("degreeId"))).selectByIndex(1);
-
         driver.findElement(By.xpath("//*[@id=\"nameEng\"]")).sendKeys(Keys.PAGE_DOWN);
         Thread.sleep(2000);
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/update-specialization/modal-wrapper/div/div/div/div[3]/button[1]")).click();
@@ -83,9 +82,7 @@ public class Specializations extends Login {
         WebElement qwer = driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[1]/span[2]"));
         //Вибрав спеціалізацію натиснувши на checkbox
         qwer.click();
-
         goTo.editspecializations();
-
         driver.findElement(By.xpath("//*[@id=\"specialization-form-tabset\"]/ul/li[3]/a/span")).click();
 
 //        assertThat("Інженерія програмного забезпечення", containsString(expected));
@@ -108,12 +105,10 @@ public class Specializations extends Login {
 
     @Test
     public void deleteCompetences() throws InterruptedException {
-        JavascriptExecutor js = (JavascriptExecutor) driver;
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.specializations();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[1]/span[2]")).click();
-        //Вибрав спеціалізацію натиснувши на checkbox
         driver.findElement(By.cssSelector("#app > div > specialization > div > div > div > div > div:nth-child(2) > button.btn.btn-danger")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/delete-specialization/modal-wrapper/div/div/div/div[3]/button[1]")).click();
     }
