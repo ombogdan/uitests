@@ -50,12 +50,12 @@ public class Groups extends Login {
     public void deleteSomeGroups() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.groups();
+        goTo.teachers();
         String actual = driver.findElement(By.className("ag-cell-value")).getText();
         //Записав значення першої групи
-        goTo.selectFirstGroup();
+        goTo.selectFirstTeacher();
         //Вибрав першу групу натиснувши checkbox
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[2]/div[1]/span/span[1]/span[2]")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[2]/div[1]/span/span[1]/span[2]")).click();
         //Вибрав другу групу натиснувши checkbox
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/div/div/div/button[1]")).click();
         //Натиснув Delete

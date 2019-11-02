@@ -52,4 +52,25 @@ public class Teachers extends Login {
         assertThat(actual, containsString(expected));
     }
 
+    @Test
+    public void deleteSomeTeacher() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.teachers();
+        String actual = driver.findElement(By.className("ag-cell-value")).getText();
+        goTo.selectFirstGroup();
+        driver.findElement(By.cssSelector("#app > div > app-teachers > div > div > div > div > ag-grid-angular > div > div.ag-root-wrapper-body.ag-layout-normal > div > div.ag-body-viewport.ag-layout-normal.ag-row-animation > div.ag-center-cols-clipper > div > div > div:nth-child(2) > div:nth-child(1) > span > span.ag-selection-checkbox > span.ag-icon.ag-icon-checkbox-unchecked")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/div/div/button[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/delete-teacher/modal-wrapper/div/div/div/div[3]/button[1]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//*[@id=\"active\"]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
+        driver.findElement(By.xpath("//*[@id=\"filterText\"]")).sendKeys(actual);
+        Thread.sleep(2000);
+        String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
+        Thread.sleep(2000);
+        assertThat(actual, containsString(expected));
+    }
+
 }

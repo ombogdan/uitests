@@ -28,6 +28,10 @@ public class GoTo {
         driver.findElement(By.className("ag-selection-checkbox")).click();
     }
 
+    public void selectFirstTeacher() {
+        driver.findElement(By.className("ag-icon ag-icon-checkbox-unchecked")).click();
+    }
+
     public void inactiveGroups() {
         driver.findElement(By.xpath("//*[@id=\"mat-slide-toggle-1\"]/label/div")).click();
 
