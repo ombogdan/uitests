@@ -50,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Teachers.sortField">
+  <component name="RunManager" selected="JUnit.Teachers.searchByOneField">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -125,7 +125,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teachers.editInformationForTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Teachers.searchByOneField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -137,7 +137,7 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
       <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
-      <option name="METHOD_NAME" value="editInformationForTeacher" />
+      <option name="METHOD_NAME" value="searchByOneField" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -189,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Teachers.searchByOneField" />
         <item itemvalue="JUnit.Teachers.sortField" />
         <item itemvalue="JUnit.Teachers.AddANewTeacherWithoutEnteringData" />
         <item itemvalue="JUnit.Teachers.addNewTeacher" />
         <item itemvalue="JUnit.Teachers.editInformationAboutTeacher" />
-        <item itemvalue="JUnit.Teachers.editInformationForTeacher" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +209,7 @@
       <updated>1572470991892</updated>
       <workItem from="1572470993396" duration="11322000" />
       <workItem from="1572592871174" duration="2106000" />
-      <workItem from="1572709295847" duration="10444000" />
+      <workItem from="1572709295847" duration="11231000" />
     </task>
     <servers />
   </component>

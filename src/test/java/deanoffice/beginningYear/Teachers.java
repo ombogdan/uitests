@@ -164,4 +164,22 @@ public class Teachers extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
     }
 
+    @Test
+    public void searchByOneField() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.teachers();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
+        WebElement search = driver.findElement(By.id("filterText"));
+        search.click();
+        search.sendKeys("Долецький");
+        //Ввів значення для пошуку
+        Thread.sleep(2000);
+        String expected= driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[2]")).getText();
+        //Знайшов назву групи
+        assertThat("Долецький", containsString(expected));
+
+    }
+
 }
