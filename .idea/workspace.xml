@@ -50,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Teachers.AddANewTeacherWithoutEnteringData">
+  <component name="RunManager" selected="JUnit.Teachers.sortField">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -106,25 +106,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Teachers.deleteSomeTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
-      <option name="METHOD_NAME" value="deleteSomeTeacher" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Teachers.editInformationAboutTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
@@ -163,6 +144,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Teachers.sortField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
+      <option name="METHOD_NAME" value="sortField" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="uitests" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -189,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Teachers.sortField" />
         <item itemvalue="JUnit.Teachers.AddANewTeacherWithoutEnteringData" />
         <item itemvalue="JUnit.Teachers.addNewTeacher" />
         <item itemvalue="JUnit.Teachers.editInformationAboutTeacher" />
         <item itemvalue="JUnit.Teachers.editInformationForTeacher" />
-        <item itemvalue="JUnit.Teachers.deleteSomeTeacher" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +209,7 @@
       <updated>1572470991892</updated>
       <workItem from="1572470993396" duration="11322000" />
       <workItem from="1572592871174" duration="2106000" />
-      <workItem from="1572709295847" duration="9351000" />
+      <workItem from="1572709295847" duration="10444000" />
     </task>
     <servers />
   </component>

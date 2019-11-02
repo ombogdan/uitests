@@ -138,7 +138,7 @@ public class Teachers extends Login {
     }
 
     @Test
-    public void AddANewTeacherIfExist() throws InterruptedException {
+    public void addANewTeacherIfExist() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.teachers();
@@ -153,6 +153,15 @@ public class Teachers extends Login {
         Thread.sleep(2000);
 //        Тут повинно вивестись повідо
 //        assertThat("Прізвище", containsString(expected));
+    }
+
+    @Test
+    public void sortField() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.teachers();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
     }
 
 }
