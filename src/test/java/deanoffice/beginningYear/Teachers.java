@@ -137,4 +137,22 @@ public class Teachers extends Login {
 
     }
 
+    @Test
+    public void AddANewTeacherIfExist() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.teachers();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/div/div/button[3]")).click();
+        driver.findElement(By.xpath("//*[@id=\"surname\"]")).sendKeys("Прізвище");
+        driver.findElement(By.xpath("//*[@id=\"name\"]")).sendKeys("Імя");
+        driver.findElement(By.xpath("//*[@id=\"patronimic\"]")).sendKeys("По Батькові");
+        new Select(driver.findElement(By.id("position"))).selectByIndex(0);
+        new Select(driver.findElement(By.id("department"))).selectByIndex(4);
+        driver.findElement(By.xpath("//*[@id=\"sexMALE\"]")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/add-teacher/modal-wrapper/div/div/div/div[3]/button[1]")).click();
+        Thread.sleep(2000);
+//        Тут повинно вивестись повідо
+//        assertThat("Прізвище", containsString(expected));
+    }
+
 }
