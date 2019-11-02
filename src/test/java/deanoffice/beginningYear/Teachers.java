@@ -2,6 +2,7 @@ package deanoffice.beginningYear;
 
 import deanoffice.settings.GoTo;
 import deanoffice.settings.Login;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -116,6 +117,23 @@ public class Teachers extends Login {
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
         Thread.sleep(2000);
         assertThat("Прізвище", containsString(expected));
+
+    }
+
+    @Test
+    public void AddANewTeacherWithoutEnteringData() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.teachers();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/div/div/button[3]")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/add-teacher/modal-wrapper/div/div/div/div[3]/button[1]")).click();
+        WebDriverWait wait = new WebDriverWait(driver, 2);
+        Alert alert = driver.switchTo().alert();
+        if ( alert.getText().contains("Перевірте введені дані на правильність!")) {
+            alert.accept();
+        } else {
+            Assert.fail();
+        }
 
     }
 

@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/CoursesForGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/CoursesForGroups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Specializations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Specializations.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Teachers.addNewTeacher">
+  <component name="RunManager" selected="JUnit.Teachers.AddANewTeacherWithoutEnteringData">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -70,7 +68,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Groups.deleteSomeGroups" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Teachers.AddANewTeacherWithoutEnteringData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -81,8 +79,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Groups" />
-      <option name="METHOD_NAME" value="deleteSomeGroups" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
+      <option name="METHOD_NAME" value="AddANewTeacherWithoutEnteringData" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -191,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Teachers.AddANewTeacherWithoutEnteringData" />
         <item itemvalue="JUnit.Teachers.addNewTeacher" />
         <item itemvalue="JUnit.Teachers.editInformationAboutTeacher" />
         <item itemvalue="JUnit.Teachers.editInformationForTeacher" />
         <item itemvalue="JUnit.Teachers.deleteSomeTeacher" />
-        <item itemvalue="JUnit.Groups.deleteSomeGroups" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +209,7 @@
       <updated>1572470991892</updated>
       <workItem from="1572470993396" duration="11322000" />
       <workItem from="1572592871174" duration="2106000" />
-      <workItem from="1572709295847" duration="7536000" />
+      <workItem from="1572709295847" duration="9351000" />
     </task>
     <servers />
   </component>
@@ -230,26 +228,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java</url>
-          <line>114</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java</url>
-          <line>116</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java</url>
-          <line>117</line>
-          <option name="timeStamp" value="24" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
