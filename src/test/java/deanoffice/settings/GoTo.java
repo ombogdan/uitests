@@ -58,5 +58,9 @@ public class GoTo {
         driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();
         driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[6]")).click();
     }
+    public void departments() {
+        driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();
+        driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[7]")).click();
+    }
 
 }

@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Departments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Teachers.searchByOneField">
+  <component name="RunManager" selected="JUnit.Departments.deleteDepartments">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -68,6 +70,44 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Departments.deleteDepartments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Departments" />
+      <option name="METHOD_NAME" value="deleteDepartments" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Departments.inactiveDepartments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Departments" />
+      <option name="METHOD_NAME" value="inactiveDepartments" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Teachers.AddANewTeacherWithoutEnteringData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
@@ -81,44 +121,6 @@
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
       <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
       <option name="METHOD_NAME" value="AddANewTeacherWithoutEnteringData" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Teachers.addNewTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
-      <option name="METHOD_NAME" value="addNewTeacher" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Teachers.editInformationAboutTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
-      <option name="METHOD_NAME" value="editInformationAboutTeacher" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -189,11 +191,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Departments.deleteDepartments" />
+        <item itemvalue="JUnit.Departments.inactiveDepartments" />
         <item itemvalue="JUnit.Teachers.searchByOneField" />
         <item itemvalue="JUnit.Teachers.sortField" />
         <item itemvalue="JUnit.Teachers.AddANewTeacherWithoutEnteringData" />
-        <item itemvalue="JUnit.Teachers.addNewTeacher" />
-        <item itemvalue="JUnit.Teachers.editInformationAboutTeacher" />
       </list>
     </recent_temporary>
   </component>
@@ -209,7 +211,8 @@
       <updated>1572470991892</updated>
       <workItem from="1572470993396" duration="11322000" />
       <workItem from="1572592871174" duration="2106000" />
-      <workItem from="1572709295847" duration="11231000" />
+      <workItem from="1572709295847" duration="12421000" />
+      <workItem from="1572796672813" duration="4825000" />
     </task>
     <servers />
   </component>
