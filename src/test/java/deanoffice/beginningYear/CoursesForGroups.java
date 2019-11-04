@@ -2,6 +2,7 @@ package deanoffice.beginningYear;
 
 import deanoffice.settings.GoTo;
 import deanoffice.settings.Login;
+import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.Select;
@@ -67,6 +68,19 @@ public class CoursesForGroups extends Login {
         selectGroup();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/button[3]")).click();
         driver.findElement(By.xpath("/html/body/modal-container/div/div/copy-courses-dialog/div[2]/div/div/ul/li[1]")).click();
+    }
+
+    @Test
+    public void academicDifference() throws InterruptedException {
+        selectGroup();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[4]/added-courses/div/div/table/tbody/tr[1]/td[7]/input")).click();
+        driver.findElement(By.cssSelector("#app > div > courses-for-groups > div > div.course-for-group-table > added-courses > div > div > table > tbody > tr:nth-child(2) > td:nth-child(7) > input")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[5]/div/div[1]/button[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/label/input")).click();
+        WebElement elems = driver.findElement(By.cssSelector("#app > div > courses-for-groups > div > div.course-for-group-table > added-courses > div > div > table > tbody > tr:nth-child(1) > td:nth-child(7) > input"));
+        if (elems.isSelected()){
+            Assert.assertTrue(true);
+        }
     }
 
     @Test
