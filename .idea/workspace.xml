@@ -4,6 +4,7 @@
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Departments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Departments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Teachers.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +51,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Departments.deleteDepartments">
+  <component name="RunManager" selected="JUnit.Departments.addNewTeacher">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -67,6 +68,25 @@
       </ExternalSystemSettings>
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
+    </configuration>
+    <configuration name="Departments.addNewTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Departments" />
+      <option name="METHOD_NAME" value="addNewTeacher" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="Departments.deleteDepartments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
@@ -100,25 +120,6 @@
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
       <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Departments" />
       <option name="METHOD_NAME" value="inactiveDepartments" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Teachers.AddANewTeacherWithoutEnteringData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Teachers" />
-      <option name="METHOD_NAME" value="AddANewTeacherWithoutEnteringData" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -189,11 +190,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Departments.addNewTeacher" />
         <item itemvalue="JUnit.Departments.deleteDepartments" />
         <item itemvalue="JUnit.Departments.inactiveDepartments" />
         <item itemvalue="JUnit.Teachers.searchByOneField" />
         <item itemvalue="JUnit.Teachers.sortField" />
-        <item itemvalue="JUnit.Teachers.AddANewTeacherWithoutEnteringData" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +212,7 @@
       <workItem from="1572592871174" duration="2106000" />
       <workItem from="1572709295847" duration="12421000" />
       <workItem from="1572796672813" duration="4825000" />
-      <workItem from="1572812973944" duration="3664000" />
+      <workItem from="1572812973944" duration="4725000" />
     </task>
     <servers />
   </component>
@@ -236,23 +237,18 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Departments.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Departments.java</url>
           <line>38</line>
-          <option name="timeStamp" value="6" />
+          <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Departments.java</url>
           <line>39</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Departments.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Departments.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="12" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

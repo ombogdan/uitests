@@ -6,10 +6,7 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -32,19 +29,16 @@ public class Teachers extends Login {
     public void deleteTeacher() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
-
         goTo.teachers();
         String actual = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[2]")).getText();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[1]/span[2]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/div/div/button[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/delete-teacher/modal-wrapper/div/div/div/div[3]/button[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/delete-teacher/modal-wrapper/div/div/div/div[3]/button[1]")).click();
-
         WebDriverWait wait = new WebDriverWait(driver, 2);
         wait.until(ExpectedConditions.alertIsPresent());
         Alert alert = driver.switchTo().alert();
         alert.accept();
-
         Thread.sleep(2000);
         driver.findElement(By.xpath("//*[@id=\"active\"]")).click();
         Thread.sleep(2000);
@@ -86,11 +80,9 @@ public class Teachers extends Login {
         goTo.selectFirstGroup();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/div/div/button[2]")).click();
         Thread.sleep(2000);
-
         String longstring = "qwerty";
         WebElement inputField = driver.findElement(By.id("scientificDegree"));
         driver.executeScript("arguments[0].setAttribute('value', '" + longstring + "')", inputField);
-
         Thread.sleep(2000);
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
         Thread.sleep(2000);
@@ -177,7 +169,6 @@ public class Teachers extends Login {
         Thread.sleep(2000);
         String expected= driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[2]")).getText();
         assertThat("Долецький", containsString(expected));
-
     }
 
 }

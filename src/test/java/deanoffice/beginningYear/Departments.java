@@ -27,6 +27,25 @@ public class Departments extends Login {
     }
 
     @Test
+    public void addNewDepartments() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.departments();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/div/div/button[3]")).click();
+        driver.findElement(By.xpath("//*[@id=\"name\"]")).sendKeys("Autotest1");
+        driver.findElement(By.xpath("//*[@id=\"abbr\"]")).sendKeys("Autotest");
+
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/add-department/modal-wrapper/div/div/div/department-form/form/div[2]/button[1]")).click();
+        Thread.sleep(2000);
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
+        driver.findElement(By.xpath("//*[@id=\"filterText\"]")).sendKeys("Autotest");
+        String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
+        Thread.sleep(2000);
+        assertThat("Autotest1", containsString(expected));
+
+    }
+
+    @Test
     public void deleteDepartments() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
@@ -47,5 +66,15 @@ public class Departments extends Login {
             Assert.assertTrue(true);
         }
     }
+
+    @Test
+    public void editInformationAboutTeacher() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.teachers();
+        //FAILED
+    }
+
+
 
 }
