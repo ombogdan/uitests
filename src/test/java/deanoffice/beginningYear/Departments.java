@@ -8,6 +8,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -34,7 +35,6 @@ public class Departments extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/div/div/button[3]")).click();
         driver.findElement(By.xpath("//*[@id=\"name\"]")).sendKeys("Autotest1");
         driver.findElement(By.xpath("//*[@id=\"abbr\"]")).sendKeys("Autotest");
-
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/add-department/modal-wrapper/div/div/div/department-form/form/div[2]/button[1]")).click();
         Thread.sleep(2000);
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
@@ -75,6 +75,24 @@ public class Departments extends Login {
         //FAILED
     }
 
+    @Test
+    public void AddANewDepartmentsIfExist() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.departments();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/div/div/button[3]")).click();
+        driver.findElement(By.xpath("//*[@id=\"name\"]")).sendKeys("Autotest");
+        driver.findElement(By.xpath("//*[@id=\"abbr\"]")).sendKeys("Au");
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/add-department/modal-wrapper/div/div/div/department-form/form/div[2]/button[1]")).click();
+        try {
+            WebDriverWait wait = new WebDriverWait(driver, 2);
+            wait.until(ExpectedConditions.alertIsPresent());
+            Alert alert = driver.switchTo().alert();
+            alert.accept();
+        } catch (Exception e) {
+            Assert.fail();
+        }
+    }
 
 
 }
