@@ -76,7 +76,7 @@ public class Departments extends Login {
     }
 
     @Test
-    public void AddANewDepartmentsIfExist() throws InterruptedException {
+    public void addANewDepartmentsIfExist() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.departments();
@@ -92,6 +92,29 @@ public class Departments extends Login {
         } catch (Exception e) {
             Assert.fail();
         }
+    }
+
+    @Test
+    public void sortField() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.departments();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
+    }
+
+    @Test
+    public void searchByOneField() throws InterruptedException {
+        GoTo goTo = new GoTo(driver);
+        Login();
+        goTo.departments();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
+        WebElement search = driver.findElement(By.id("filterText"));
+        search.click();
+        search.sendKeys("кафедра системного програмування");
+        Thread.sleep(2000);
+        String expected= driver.findElement(By.cssSelector("#app > div > app-department > div > div > div > div > ag-grid-angular > div > div.ag-root-wrapper-body.ag-layout-normal > div > div.ag-body-viewport.ag-layout-normal.ag-row-animation > div.ag-center-cols-clipper > div > div > div > div:nth-child(1) > span > span.ag-cell-value")).getText();
+        assertThat("кафедра системного програмування", containsString(expected));
     }
 
 
