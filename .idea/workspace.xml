@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Courses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Specializations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Specializations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/CoursesForGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/CoursesForGroups.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -51,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Courses">
+  <component name="RunManager" selected="JUnit.CoursesForGroups.editCourse">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -69,7 +68,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Courses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoursesForGroups.cancelEdit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -80,53 +79,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Courses" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Specializations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Specializations.createNewCompetences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
-      <option name="METHOD_NAME" value="createNewCompetences" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.CoursesForGroups" />
+      <option name="METHOD_NAME" value="cancelEdit" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Specializations.deleteCompetences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoursesForGroups.copyItemsFromAnotherGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -137,15 +98,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
-      <option name="METHOD_NAME" value="deleteCompetences" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.CoursesForGroups" />
+      <option name="METHOD_NAME" value="copyItemsFromAnotherGroup" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Specializations.deleteSpecializations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="CoursesForGroups.editCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -156,8 +117,46 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
-      <option name="METHOD_NAME" value="deleteSpecializations" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.CoursesForGroups" />
+      <option name="METHOD_NAME" value="editCourse" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoursesForGroups.removeAnCoursesFromAGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.CoursesForGroups" />
+      <option name="METHOD_NAME" value="removeAnCoursesFromAGroup" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CoursesForGroups.selectTeacherForCourses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.CoursesForGroups" />
+      <option name="METHOD_NAME" value="selectTeacherForCourses" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -190,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Courses" />
-        <item itemvalue="JUnit.Specializations" />
-        <item itemvalue="JUnit.Specializations.deleteSpecializations" />
-        <item itemvalue="JUnit.Specializations.deleteCompetences" />
-        <item itemvalue="JUnit.Specializations.createNewCompetences" />
+        <item itemvalue="JUnit.CoursesForGroups.editCourse" />
+        <item itemvalue="JUnit.CoursesForGroups.selectTeacherForCourses" />
+        <item itemvalue="JUnit.CoursesForGroups.cancelEdit" />
+        <item itemvalue="JUnit.CoursesForGroups.copyItemsFromAnotherGroup" />
+        <item itemvalue="JUnit.CoursesForGroups.removeAnCoursesFromAGroup" />
       </list>
     </recent_temporary>
   </component>
@@ -213,7 +212,7 @@
       <workItem from="1572709295847" duration="12421000" />
       <workItem from="1572796672813" duration="4825000" />
       <workItem from="1572812973944" duration="18072000" />
-      <workItem from="1572945327101" duration="635000" />
+      <workItem from="1572945327101" duration="3064000" />
     </task>
     <servers />
   </component>

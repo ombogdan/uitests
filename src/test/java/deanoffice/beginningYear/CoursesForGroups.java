@@ -19,14 +19,12 @@ public class CoursesForGroups extends Login {
         Login();
         goTo.coursesForGroups();
         new Select(driver.findElement(By.id("group"))).selectByIndex(1);
-
     }
 
     @Test
     public void findCourses() throws InterruptedException {
         selectGroup();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[1]/div/div/div[4]/input")).sendKeys("Бази даних");
-
     }
 
     @Test
@@ -35,6 +33,7 @@ public class CoursesForGroups extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[2]/div[1]/div/studied-courses/div/div/table/tbody/tr/td[1]/input")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/button[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[5]/div/div[1]/button[1]")).click();
+        driver.quit();
     }
 
     @Test
@@ -44,8 +43,7 @@ public class CoursesForGroups extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/button[1]")).click();
         Thread.sleep(100);
         String expected = driver.findElement(By.xpath("/simple-notification/div/div/div[2]")).getText();
-        assertThat("Помилка", containsString(expected));
-
+        assertThat("Предмет Бази даних не було додано, тому що він існує", containsString(expected));
     }
 
     @Test
@@ -54,13 +52,15 @@ public class CoursesForGroups extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[1]/div/div/div[4]/input")).sendKeys("Англійська мова");
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[2]/div[1]/div/studied-courses/div/div/table/tbody/tr/td[1]/input")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/button[1]")).click();
+        driver.quit();
     }
 
     @Test
-    public void removeAnCoursesFromAGroup() throws InterruptedException {
+    public void removeCoursesFromAGroup() throws InterruptedException {
         selectGroup();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[4]/added-courses/div/div/table/tbody/tr[1]/td[1]/input")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/button[2]")).click();
+        driver.quit();
     }
 
     @Test
@@ -68,6 +68,7 @@ public class CoursesForGroups extends Login {
         selectGroup();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/button[3]")).click();
         driver.findElement(By.xpath("/html/body/modal-container/div/div/copy-courses-dialog/div[2]/div/div/ul/li[1]")).click();
+        driver.quit();
     }
 
     @Test
@@ -78,9 +79,12 @@ public class CoursesForGroups extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[5]/div/div[1]/button[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/label/input")).click();
         WebElement elems = driver.findElement(By.cssSelector("#app > div > courses-for-groups > div > div.course-for-group-table > added-courses > div > div > table > tbody > tr:nth-child(1) > td:nth-child(7) > input"));
-        if (elems.isSelected()){
+        if (elems.isSelected()) {
             Assert.assertTrue(true);
+        } else {
+            Assert.fail();
         }
+        driver.quit();
     }
 
     @Test
@@ -88,6 +92,7 @@ public class CoursesForGroups extends Login {
         selectGroup();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/button[3]")).click();
         driver.findElement(By.xpath("/html/body/modal-container/div/div/copy-courses-dialog/div[2]/div/div/ul/li[1]")).click();
+        driver.quit();
     }
 
     @Test
@@ -95,18 +100,16 @@ public class CoursesForGroups extends Login {
         selectGroup();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[4]/added-courses/div/div/table/tbody/tr[1]/td[6]/button")).click();
         String actual = driver.findElement(By.xpath("/html/body/modal-container/div/div/teacher-dialog/div[2]/ul/li[1]")).getText();
+        actual = actual.substring(0, actual.indexOf(" "));
+
         driver.findElement(By.xpath("/html/body/modal-container/div/div/teacher-dialog/div[2]/ul/li[1]")).click();
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[4]/added-courses/div/div/table/tbody/tr[1]/td[6]/button")).getText();
+        expected = expected.substring(0, expected.indexOf(" "));
         assertThat(actual, containsString(expected));
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[5]/div/div[1]/button[1]")).click();
-
+        Thread.sleep(2000);
+        driver.findElement(By.cssSelector("#app > div > courses-for-groups > div > div.bg-white.fixed-bottom.ml-3 > div > div.col-11 > button.btn.btn-success.btn-medium.ml-1")).click();
+        driver.quit();
     }
-
-//    @Test
-//    public void editData() throws InterruptedException {
-//        selectGroup();
-//        driver.findElement(By.xpath()).SendKeys(yourDateTime.ToString("ddd, dd.MM.yyyy",CultureInfo.CreateSpecificCulture("en-US")));
-//    }
 
     @Test
     public void editCourse() throws InterruptedException {
@@ -116,6 +119,6 @@ public class CoursesForGroups extends Login {
         driver.findElement(By.xpath("/html/body/modal-container/div/div/edit-dialog/div[2]/div/div/button[1]")).click();
         String actual = driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[4]/added-courses/div/div/table/tbody/tr[1]/td[3]")).getText();
         assertThat("державний іспит", containsString(actual));
+        driver.quit();
     }
-
 }
