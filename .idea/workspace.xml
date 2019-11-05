@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Groups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Groups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Specializations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/Specializations.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Groups">
+  <component name="RunManager" selected="JUnit.Specializations.deleteSpecializations">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -87,7 +87,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Groups.deleteGroupsWithStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Specializations.createAndChooseAQualification" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -98,15 +98,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Groups" />
-      <option name="METHOD_NAME" value="deleteGroupsWithStudents" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
+      <option name="METHOD_NAME" value="createAndChooseAQualification" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Groups.deleteGroupsWithoutStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Specializations.createNewCompetences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -117,15 +117,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Groups" />
-      <option name="METHOD_NAME" value="deleteGroupsWithoutStudents" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
+      <option name="METHOD_NAME" value="createNewCompetences" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Groups.deleteSomeGroups" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Specializations.deleteCompetences" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -136,15 +136,15 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Groups" />
-      <option name="METHOD_NAME" value="deleteSomeGroups" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
+      <option name="METHOD_NAME" value="deleteCompetences" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Groups.restoreOneGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Specializations.deleteSpecializations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -155,8 +155,8 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Groups" />
-      <option name="METHOD_NAME" value="restoreOneGroup" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.Specializations" />
+      <option name="METHOD_NAME" value="deleteSpecializations" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -189,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Specializations.deleteSpecializations" />
+        <item itemvalue="JUnit.Specializations.deleteCompetences" />
+        <item itemvalue="JUnit.Specializations.createNewCompetences" />
+        <item itemvalue="JUnit.Specializations.createAndChooseAQualification" />
         <item itemvalue="JUnit.Groups" />
-        <item itemvalue="JUnit.Groups.restoreOneGroup" />
-        <item itemvalue="JUnit.Groups.deleteGroupsWithStudents" />
-        <item itemvalue="JUnit.Groups.deleteSomeGroups" />
-        <item itemvalue="JUnit.Groups.deleteGroupsWithoutStudents" />
       </list>
     </recent_temporary>
   </component>
@@ -211,7 +211,7 @@
       <workItem from="1572592871174" duration="2106000" />
       <workItem from="1572709295847" duration="12421000" />
       <workItem from="1572796672813" duration="4825000" />
-      <workItem from="1572812973944" duration="16320000" />
+      <workItem from="1572812973944" duration="18072000" />
     </task>
     <servers />
   </component>
