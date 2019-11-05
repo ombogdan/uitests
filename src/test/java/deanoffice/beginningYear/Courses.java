@@ -19,6 +19,7 @@ public class  Courses extends Login {
         goTo.subjects();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-course/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-course/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
+        driver.quit();
     }
 
     @Test
@@ -27,15 +28,12 @@ public class  Courses extends Login {
         Login();
         goTo.subjects();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-course/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
-        //Натиснув на три паралельні полоски
         WebElement search = driver.findElement(By.id("filterText"));
         search.sendKeys("Алгебра та геометрія");
-        //Ввів значення для пошуку
         Thread.sleep(2000);
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-course/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]")).getText();
-        //Знайшов назву групи
         assertThat("Алгебра та геометрія", containsString(expected));
-
+        driver.quit();
     }
 
     @Test
@@ -50,9 +48,8 @@ public class  Courses extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-course/form/div/div/button")).click();
         Thread.sleep(1000);
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-course/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]")).getText();
-        //Знайшов назву групи
         assertThat("Історія України", containsString(expected));
-
+        driver.quit();
     }
 
 }

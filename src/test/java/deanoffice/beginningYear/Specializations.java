@@ -62,6 +62,4 @@ public class Specializations extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/delete-specialization/modal-wrapper/div/div/div/div[3]/button[1]")).click();
         driver.quit();
     }
-
-
 }
