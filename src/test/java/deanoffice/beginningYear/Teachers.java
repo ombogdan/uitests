@@ -23,6 +23,7 @@ public class Teachers extends Login {
         Login();
         goTo.teachers();
         driver.findElement(By.xpath("//*[@id=\"active\"]")).click();
+        driver.quit();
     }
 
     @Test
@@ -48,6 +49,7 @@ public class Teachers extends Login {
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
         Thread.sleep(2000);
         assertThat(actual, containsString(expected));
+        driver.quit();
     }
 
     @Test
@@ -69,24 +71,7 @@ public class Teachers extends Login {
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
         Thread.sleep(2000);
         assertThat(actual, containsString(expected));
-    }
-
-    @Test
-    public void editInformationAboutTeacher() throws InterruptedException {
-        GoTo goTo = new GoTo(driver);
-        Login();
-        goTo.teachers();
-        String actual = driver.findElement(By.className("ag-cell-value")).getText();
-        goTo.selectFirstGroup();
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/div/div/button[2]")).click();
-        Thread.sleep(2000);
-        String longstring = "qwerty";
-        WebElement inputField = driver.findElement(By.id("scientificDegree"));
-        driver.executeScript("arguments[0].setAttribute('value', '" + longstring + "')", inputField);
-        Thread.sleep(2000);
-        String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
-        Thread.sleep(2000);
-        assertThat(actual, containsString(expected));
+        driver.quit();
     }
 
     @Test
@@ -99,7 +84,7 @@ public class Teachers extends Login {
         driver.findElement(By.xpath("//*[@id=\"name\"]")).sendKeys("Імя");
         driver.findElement(By.xpath("//*[@id=\"patronimic\"]")).sendKeys("По Батькові");
         new Select(driver.findElement(By.id("position"))).selectByIndex(0);
-        new Select(driver.findElement(By.id("department"))).selectByIndex(4);
+        new Select(driver.findElement(By.id("department"))).selectByIndex(2);
         driver.findElement(By.xpath("//*[@id=\"sexMALE\"]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/add-teacher/modal-wrapper/div/div/div/div[3]/button[1]")).click();
         Thread.sleep(2000);
@@ -109,7 +94,7 @@ public class Teachers extends Login {
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
         Thread.sleep(2000);
         assertThat("Прізвище", containsString(expected));
-
+        driver.quit();
     }
 
     @Test
@@ -126,7 +111,7 @@ public class Teachers extends Login {
         } else {
             Assert.fail();
         }
-
+        driver.quit();
     }
 
     @Test
@@ -143,8 +128,9 @@ public class Teachers extends Login {
         driver.findElement(By.xpath("//*[@id=\"sexMALE\"]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/add-teacher/modal-wrapper/div/div/div/div[3]/button[1]")).click();
         Thread.sleep(2000);
-//        Тут повинно вивестись повідо
+//        Тут повинно вивестись повідомлення про помилку але це ще нереалізовано
 //        assertThat("Прізвище", containsString(expected));
+        driver.quit();
     }
 
     @Test
@@ -154,6 +140,7 @@ public class Teachers extends Login {
         goTo.teachers();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
+        driver.quit();
     }
 
     @Test
@@ -165,10 +152,10 @@ public class Teachers extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
         WebElement search = driver.findElement(By.id("filterText"));
         search.click();
-        search.sendKeys("Долецький");
+        search.sendKeys("Карапетян");
         Thread.sleep(2000);
         String expected= driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[2]")).getText();
-        assertThat("Долецький", containsString(expected));
+        assertThat("Карапетян", containsString(expected));
+        driver.quit();
     }
-
 }

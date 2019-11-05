@@ -41,9 +41,9 @@ public class CoursesForGroups extends Login {
         findCourses();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[2]/div[1]/div/studied-courses/div/div/table/tbody/tr[1]/td[1]/input")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[3]/div/button[1]")).click();
-        Thread.sleep(100);
-        String expected = driver.findElement(By.xpath("/simple-notification/div/div/div[2]")).getText();
-        assertThat("Предмет Бази даних не було додано, тому що він існує", containsString(expected));
+        String expected = driver.findElement(By.className("sn-title.ng-tns-c9-2.ng-star-inserted")).getText();
+        assertThat("Помилка", containsString(expected));
+        //я не можу знайти елемент який виводить повідомлення про помилку
     }
 
     @Test
@@ -101,7 +101,6 @@ public class CoursesForGroups extends Login {
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[4]/added-courses/div/div/table/tbody/tr[1]/td[6]/button")).click();
         String actual = driver.findElement(By.xpath("/html/body/modal-container/div/div/teacher-dialog/div[2]/ul/li[1]")).getText();
         actual = actual.substring(0, actual.indexOf(" "));
-
         driver.findElement(By.xpath("/html/body/modal-container/div/div/teacher-dialog/div[2]/ul/li[1]")).click();
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/courses-for-groups/div/div[4]/added-courses/div/div/table/tbody/tr[1]/td[6]/button")).getText();
         expected = expected.substring(0, expected.indexOf(" "));
