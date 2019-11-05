@@ -18,13 +18,13 @@ import static org.hamcrest.core.StringContains.containsString;
 
 public class Departments extends Login {
 
-
     @Test
     public void inactiveDepartments() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.departments();
         driver.findElement(By.xpath("//*[@id=\"active\"]")).click();
+        driver.quit();
     }
 
     @Test
@@ -42,7 +42,7 @@ public class Departments extends Login {
         String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div/div[1]/span/span[2]")).getText();
         Thread.sleep(2000);
         assertThat("Autotest1", containsString(expected));
-
+        driver.quit();
     }
 
     @Test
@@ -65,10 +65,11 @@ public class Departments extends Login {
         } else {
             Assert.assertTrue(true);
         }
+        driver.quit();
     }
 
     @Test
-    public void editInformationAboutTeacher() throws InterruptedException {
+    public void editInformationAboutTeacher() {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.teachers();
@@ -76,7 +77,7 @@ public class Departments extends Login {
     }
 
     @Test
-    public void addANewDepartmentsIfExist() throws InterruptedException {
+    public void addANewDepartmentsIfExist() {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.departments();
@@ -85,22 +86,25 @@ public class Departments extends Login {
         driver.findElement(By.xpath("//*[@id=\"abbr\"]")).sendKeys("Au");
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/add-department/modal-wrapper/div/div/div/department-form/form/div[2]/button[1]")).click();
         try {
-            WebDriverWait wait = new WebDriverWait(driver, 2);
+            WebDriverWait wait = new
+                    WebDriverWait(driver, 2);
             wait.until(ExpectedConditions.alertIsPresent());
             Alert alert = driver.switchTo().alert();
             alert.accept();
         } catch (Exception e) {
             Assert.fail();
         }
+        driver.quit();
     }
 
     @Test
-    public void sortField() throws InterruptedException {
+    public void sortField() {
         GoTo goTo = new GoTo(driver);
         Login();
         goTo.departments();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
+        driver.quit();
     }
 
     @Test
@@ -113,9 +117,8 @@ public class Departments extends Login {
         search.click();
         search.sendKeys("кафедра системного програмування");
         Thread.sleep(2000);
-        String expected= driver.findElement(By.cssSelector("#app > div > app-department > div > div > div > div > ag-grid-angular > div > div.ag-root-wrapper-body.ag-layout-normal > div > div.ag-body-viewport.ag-layout-normal.ag-row-animation > div.ag-center-cols-clipper > div > div > div > div:nth-child(1) > span > span.ag-cell-value")).getText();
+        String expected = driver.findElement(By.cssSelector("#app > div > app-department > div > div > div > div > ag-grid-angular > div > div.ag-root-wrapper-body.ag-layout-normal > div > div.ag-body-viewport.ag-layout-normal.ag-row-animation > div.ag-center-cols-clipper > div > div > div > div:nth-child(1) > span > span.ag-cell-value")).getText();
         assertThat("кафедра системного програмування", containsString(expected));
+        driver.quit();
     }
-
-
 }
