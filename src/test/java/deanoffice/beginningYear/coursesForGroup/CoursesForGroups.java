@@ -1,7 +1,7 @@
-package deanoffice.beginningYear;
+package deanoffice.beginningYear.coursesForGroup;
 
 import deanoffice.settings.GoTo;
-import deanoffice.settings.Login;
+import deanoffice.settings.Settings;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.*;
@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.Select;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
-public class CoursesForGroups extends Login {
+public class CoursesForGroups extends Settings {
 
     @Test
     public void selectGroup() throws InterruptedException {

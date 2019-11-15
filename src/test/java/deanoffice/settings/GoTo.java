@@ -40,14 +40,8 @@ public class GoTo {
         driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();
         driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[2]")).click();
     }
-    public void editspecializations() {
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div/specialization/div/div/div/div/div[2]/button[2]")).click();
-    }
 
-    public void subjects() {
-        driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[4]")).click();
-    }
+
 
     public void coursesForGroups() {
         driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();

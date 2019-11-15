@@ -1,7 +1,7 @@
-package deanoffice.beginningYear;
+package deanoffice.beginningYear.teachers;
 
 import deanoffice.settings.GoTo;
-import deanoffice.settings.Login;
+import deanoffice.settings.Settings;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
@@ -15,7 +15,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
-public class Teachers extends Login {
+public class Teachers extends Settings {
 
     @Test
     public void inactiveTeachers() throws InterruptedException {

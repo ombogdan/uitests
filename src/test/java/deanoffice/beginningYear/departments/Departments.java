@@ -1,22 +1,20 @@
-package deanoffice.beginningYear;
+package deanoffice.beginningYear.departments;
 
 import deanoffice.settings.GoTo;
-import deanoffice.settings.Login;
+import deanoffice.settings.Settings;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
-public class Departments extends Login {
+public class Departments extends Settings {
 
     @Test
     public void inactiveDepartments() throws InterruptedException {
@@ -69,11 +67,17 @@ public class Departments extends Login {
     }
 
     @Test
-    public void editInformationAboutTeacher() {
+    public void editInformationAboutDepartments() {
         GoTo goTo = new GoTo(driver);
         Login();
-        goTo.teachers();
-        //FAILED
+        goTo.departments();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[1]/span[2]")).click();
+        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-department/div/div/div/div/div/div/button[2]")).click();
+        String windowHandler = driver.getWindowHandle();
+        driver.switchTo().window(windowHandler);
+        driver.findElement(By.xpath("//*[@id=\"name\"]")).clear();
+        driver.findElement(By.xpath("//*[@id=\"name\"]")).sendKeys("ChangeText");
+
     }
 
     @Test

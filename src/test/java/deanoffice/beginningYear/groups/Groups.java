@@ -1,6 +1,6 @@
-package deanoffice.beginningYear;
+package deanoffice.beginningYear.groups;
 import deanoffice.settings.GoTo;
-import deanoffice.settings.Login;
+import deanoffice.settings.Settings;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -8,7 +8,7 @@ import org.openqa.selenium.WebElement;
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
-public class Groups extends Login {
+public class Groups extends Settings {
 
     @Test
     public void inactiveGroups() throws InterruptedException {
