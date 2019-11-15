@@ -12,10 +12,10 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
 public class Courses extends Settings {
+    private CoursesPage coursesPage = new CoursesPage();
 
     @Test
     public void sortField() {
-        CoursesPage coursesPage = new CoursesPage();
         Login();
         driver.findElement(coursesPage.startYear).click();
         driver.findElement(coursesPage.courses).click();
@@ -25,7 +25,6 @@ public class Courses extends Settings {
 
     @Test
     public void searchByOneField() {
-        CoursesPage coursesPage = new CoursesPage();
         Login();
         driver.findElement(coursesPage.startYear).click();
         driver.findElement(coursesPage.courses).click();
@@ -39,7 +38,6 @@ public class Courses extends Settings {
 
     @Test
     public void searchCourse() throws InterruptedException {
-        CoursesPage coursesPage = new CoursesPage();
         Login();
         driver.findElement(coursesPage.startYear).click();
         driver.findElement(coursesPage.courses).click();

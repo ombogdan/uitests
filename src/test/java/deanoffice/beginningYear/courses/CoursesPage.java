@@ -1,11 +1,8 @@
 package deanoffice.beginningYear.courses;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.chrome.ChromeDriver;
 
-public class CoursesPage {
-    protected ChromeDriver driver;
-
+class CoursesPage {
     By nameCourses = By.xpath("//*[@id=\"app\"]/div/app-course/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]");
     By startYear = By.xpath("//*[@id=\"nav-year-start\"]");
     By courses = By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[4]");
@@ -15,6 +12,4 @@ public class CoursesPage {
     By numberOfHours = By.xpath("//*[@id=\"tfHours\"]");
     By buttonSearchCourse = By.xpath("//*[@id=\"app\"]/div/app-course/form/div/div/button");
     By searchInputField = By.xpath("//*[@id=\"app\"]/div/app-course/form/div/div/input");
-
-
 }
