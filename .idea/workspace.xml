@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroupsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/departments/DepartmentsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/courses/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/courses/Courses.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/courses/CoursesPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/courses/CoursesPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroups.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroupsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroupsPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/departments/Departments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/departments/Departments.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/settings/Settings.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.CoursesForGroups.editCourse">
+  <component name="RunManager" selected="JUnit.Departments.searchByOneField">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -80,95 +78,95 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CoursesForGroups.academicDifference" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Departments.addANewDepartmentsIfExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.coursesForGroup.*" />
+          <option name="PATTERN" value="deanoffice.beginningYear.departments.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.coursesForGroup" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.coursesForGroup.CoursesForGroups" />
-      <option name="METHOD_NAME" value="academicDifference" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.departments" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.departments.Departments" />
+      <option name="METHOD_NAME" value="addANewDepartmentsIfExist" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoursesForGroups.cancelEdit" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Departments.addNewDepartments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.coursesForGroup.*" />
+          <option name="PATTERN" value="deanoffice.beginningYear.departments.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.coursesForGroup" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.coursesForGroup.CoursesForGroups" />
-      <option name="METHOD_NAME" value="cancelEdit" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.departments" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.departments.Departments" />
+      <option name="METHOD_NAME" value="addNewDepartments" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoursesForGroups.copyItemsFromAnotherGroup" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Departments.deleteDepartments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.coursesForGroup.*" />
+          <option name="PATTERN" value="deanoffice.beginningYear.departments.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.coursesForGroup" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.coursesForGroup.CoursesForGroups" />
-      <option name="METHOD_NAME" value="copyItemsFromAnotherGroup" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.departments" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.departments.Departments" />
+      <option name="METHOD_NAME" value="deleteDepartments" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoursesForGroups.editCourse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Departments.editInformationAboutDepartments" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.coursesForGroup.*" />
+          <option name="PATTERN" value="deanoffice.beginningYear.departments.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.coursesForGroup" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.coursesForGroup.CoursesForGroups" />
-      <option name="METHOD_NAME" value="editCourse" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.departments" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.departments.Departments" />
+      <option name="METHOD_NAME" value="editInformationAboutDepartments" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoursesForGroups.selectTeacherForCourses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Departments.searchByOneField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.coursesForGroup.*" />
+          <option name="PATTERN" value="deanoffice.beginningYear.departments.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.coursesForGroup" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.coursesForGroup.CoursesForGroups" />
-      <option name="METHOD_NAME" value="selectTeacherForCourses" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.departments" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.departments.Departments" />
+      <option name="METHOD_NAME" value="searchByOneField" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -201,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CoursesForGroups.editCourse" />
-        <item itemvalue="JUnit.CoursesForGroups.selectTeacherForCourses" />
-        <item itemvalue="JUnit.CoursesForGroups.cancelEdit" />
-        <item itemvalue="JUnit.CoursesForGroups.academicDifference" />
-        <item itemvalue="JUnit.CoursesForGroups.copyItemsFromAnotherGroup" />
+        <item itemvalue="JUnit.Departments.searchByOneField" />
+        <item itemvalue="JUnit.Departments.addANewDepartmentsIfExist" />
+        <item itemvalue="JUnit.Departments.editInformationAboutDepartments" />
+        <item itemvalue="JUnit.Departments.deleteDepartments" />
+        <item itemvalue="JUnit.Departments.addNewDepartments" />
       </list>
     </recent_temporary>
   </component>
@@ -234,7 +232,8 @@
       <workItem from="1573353230005" duration="616000" />
       <workItem from="1573557589823" duration="1624000" />
       <workItem from="1573635503471" duration="1784000" />
-      <workItem from="1573813637986" duration="10670000" />
+      <workItem from="1573813637986" duration="11497000" />
+      <workItem from="1573931359672" duration="6646000" />
     </task>
     <servers />
   </component>
@@ -258,19 +257,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroups.java</url>
-          <line>105</line>
-          <option name="timeStamp" value="31" />
+          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/departments/Departments.java</url>
+          <line>116</line>
+          <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroups.java</url>
-          <line>106</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroups.java</url>
-          <line>107</line>
-          <option name="timeStamp" value="33" />
+          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/departments/Departments.java</url>
+          <line>117</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
