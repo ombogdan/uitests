@@ -23,10 +23,6 @@ public class Settings {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(ops);
         driver.manage().window().maximize();
-    }
-
-    protected void Login() {
-        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://localhost:4200/login");
         WebElement username = driver.findElementByName("username");
         WebElement password = driver.findElementByName("password");
@@ -39,6 +35,6 @@ public class Settings {
 
     @After
     public void quit() {
-        //driver.quit();
+        driver.quit();
     }
 }

@@ -6,6 +6,7 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
@@ -14,7 +15,6 @@ public class CoursesForGroups extends Settings {
 
     @Test
     public void selectGroup() {
-        Login();
         driver.findElement(coursesForGroupsPage.startYear).click();
         driver.findElement(coursesForGroupsPage.coursesForGroup).click();
         new Select(driver.findElement(By.id("group"))).selectByIndex(1);

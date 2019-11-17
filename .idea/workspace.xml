@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/groups/GroupsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/courses/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/courses/Courses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/coursesForGroup/CoursesForGroups.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/departments/Departments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/departments/Departments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/departments/DepartmentsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/departments/DepartmentsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/groups/Groups.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/groups/Groups.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/teachers/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/teachers/Teachers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/settings/Settings.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -62,7 +62,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Groups.searchByOneField">
+  <component name="RunManager" selected="JUnit.Courses.sortField">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -80,6 +80,25 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Courses.sortField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.courses.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.courses" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.courses.Courses" />
+      <option name="METHOD_NAME" value="sortField" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Groups.deleteGroupsWithStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
@@ -93,25 +112,6 @@
       <option name="PACKAGE_NAME" value="deanoffice.beginningYear.groups" />
       <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.groups.Groups" />
       <option name="METHOD_NAME" value="deleteGroupsWithStudents" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Groups.deleteSomeGroups" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.groups.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.groups" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.groups.Groups" />
-      <option name="METHOD_NAME" value="deleteSomeGroups" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -201,11 +201,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Courses.sortField" />
         <item itemvalue="JUnit.Groups.searchByOneField" />
         <item itemvalue="JUnit.Groups.sortField" />
         <item itemvalue="JUnit.Groups.restoreOneGroup" />
         <item itemvalue="JUnit.Groups.deleteGroupsWithStudents" />
-        <item itemvalue="JUnit.Groups.deleteSomeGroups" />
       </list>
     </recent_temporary>
   </component>
@@ -235,7 +235,7 @@
       <workItem from="1573557589823" duration="1624000" />
       <workItem from="1573635503471" duration="1784000" />
       <workItem from="1573813637986" duration="11497000" />
-      <workItem from="1573931359672" duration="15117000" />
+      <workItem from="1573931359672" duration="15753000" />
     </task>
     <servers />
   </component>

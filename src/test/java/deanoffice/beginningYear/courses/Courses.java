@@ -16,7 +16,6 @@ public class Courses extends Settings {
 
     @Test
     public void sortField() {
-        Login();
         driver.findElement(coursesPage.startYear).click();
         driver.findElement(coursesPage.courses).click();
         driver.findElement(coursesPage.nameCourses).click();
@@ -25,7 +24,6 @@ public class Courses extends Settings {
 
     @Test
     public void searchByOneField() {
-        Login();
         driver.findElement(coursesPage.startYear).click();
         driver.findElement(coursesPage.courses).click();
         driver.findElement(coursesPage.iconMenu).click();
@@ -38,7 +36,6 @@ public class Courses extends Settings {
 
     @Test
     public void searchCourse() throws InterruptedException {
-        Login();
         driver.findElement(coursesPage.startYear).click();
         driver.findElement(coursesPage.courses).click();
         driver.findElement(coursesPage.searchInputField).sendKeys("Історія України");

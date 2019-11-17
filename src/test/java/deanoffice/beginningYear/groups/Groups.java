@@ -1,11 +1,10 @@
 package deanoffice.beginningYear.groups;
 
-import deanoffice.settings.GoTo;
 import deanoffice.settings.Settings;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.WebElement;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
@@ -13,8 +12,7 @@ public class Groups extends Settings {
     private GroupsPage groupsPage = new GroupsPage();
 
     @Test
-    public void inactiveGroups(){
-        Login();
+    public void inactiveGroups() {
         driver.findElement(groupsPage.startYear).click();
         driver.findElement(groupsPage.groups).click();
         driver.findElement(groupsPage.inactiveGroups).click();
@@ -25,7 +23,6 @@ public class Groups extends Settings {
     @Test
     public void addNewGroups() throws InterruptedException {
         JavascriptExecutor js = driver;
-        Login();
         driver.findElement(groupsPage.startYear).click();
         driver.findElement(groupsPage.groups).click();
         driver.findElement(groupsPage.newGroupBtn).click();
@@ -41,7 +38,6 @@ public class Groups extends Settings {
 
     @Test
     public void deleteGroupsWithoutStudents() throws InterruptedException {
-        Login();
         driver.findElement(groupsPage.startYear).click();
         driver.findElement(groupsPage.groups).click();
         String actual = driver.findElement(groupsPage.nameFirstGroup).getText();
@@ -59,7 +55,6 @@ public class Groups extends Settings {
 
     @Test
     public void deleteSomeGroups() throws InterruptedException {
-        Login();
         driver.findElement(groupsPage.startYear).click();
         driver.findElement(groupsPage.groups).click();
         String actual = driver.findElement(groupsPage.nameFirstGroup).getText();
@@ -77,8 +72,7 @@ public class Groups extends Settings {
     }
 
     @Test
-    public void deleteGroupsWithStudents(){
-        Login();
+    public void deleteGroupsWithStudents() {
         driver.findElement(groupsPage.startYear).click();
         driver.findElement(groupsPage.groups).click();
         driver.findElement(groupsPage.searchIcon).click();
@@ -92,7 +86,6 @@ public class Groups extends Settings {
 
     @Test
     public void restoreOneGroup() throws InterruptedException {
-        Login();
         driver.findElement(groupsPage.startYear).click();
         driver.findElement(groupsPage.groups).click();
         driver.findElement(groupsPage.inactiveGroups).click();
@@ -110,8 +103,7 @@ public class Groups extends Settings {
     }
 
     @Test
-    public void sortField(){
-        Login();
+    public void sortField() {
         driver.findElement(groupsPage.startYear).click();
         driver.findElement(groupsPage.groups).click();
         driver.findElement(groupsPage.name).click();
@@ -120,7 +112,6 @@ public class Groups extends Settings {
 
     @Test
     public void searchByOneField() throws InterruptedException {
-        Login();
         driver.findElement(groupsPage.startYear).click();
         driver.findElement(groupsPage.groups).click();
         driver.findElement(groupsPage.searchIcon).click();

@@ -7,6 +7,7 @@ import org.openqa.selenium.Alert;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
@@ -15,7 +16,6 @@ public class Departments extends Settings {
 
     @Test
     public void inactiveDepartments() {
-        Login();
         driver.findElement(departmentsPage.startYear).click();
         driver.findElement(departmentsPage.departments).click();
         driver.findElement(departmentsPage.inactiveDepartments).click();
@@ -23,7 +23,6 @@ public class Departments extends Settings {
 
     @Test
     public void addNewDepartments() throws InterruptedException {
-        Login();
         driver.findElement(departmentsPage.startYear).click();
         driver.findElement(departmentsPage.departments).click();
         driver.findElement(departmentsPage.addNewDepartmentBtn).click();
@@ -40,7 +39,6 @@ public class Departments extends Settings {
 
     @Test
     public void deleteDepartments() throws InterruptedException {
-        Login();
         driver.findElement(departmentsPage.startYear).click();
         driver.findElement(departmentsPage.departments).click();
         String actual = driver.findElement(departmentsPage.firstDepartmentName).getText();
@@ -61,7 +59,6 @@ public class Departments extends Settings {
 
     @Test
     public void editInformationAboutDepartments() {
-        Login();
         driver.findElement(departmentsPage.startYear).click();
         driver.findElement(departmentsPage.departments).click();
         driver.findElement(departmentsPage.selectFirstDepartment).click();
@@ -74,7 +71,6 @@ public class Departments extends Settings {
 
     @Test
     public void addANewDepartmentsIfExist() {
-        Login();
         driver.findElement(departmentsPage.startYear).click();
         driver.findElement(departmentsPage.departments).click();
         driver.findElement(departmentsPage.addNewDepartmentBtn).click();
@@ -94,7 +90,6 @@ public class Departments extends Settings {
 
     @Test
     public void sortField() {
-        Login();
         driver.findElement(departmentsPage.startYear).click();
         driver.findElement(departmentsPage.departments).click();
         driver.findElement(departmentsPage.nameDepartment).click();
@@ -103,7 +98,6 @@ public class Departments extends Settings {
 
     @Test
     public void searchByOneField() throws InterruptedException {
-        Login();
         driver.findElement(departmentsPage.startYear).click();
         driver.findElement(departmentsPage.departments).click();
         driver.findElement(departmentsPage.findIcon).click();

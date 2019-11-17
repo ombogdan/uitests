@@ -11,7 +11,6 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 
@@ -20,7 +19,6 @@ public class Teachers extends Settings {
     @Test
     public void inactiveTeachers() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
-        Login();
         goTo.teachers();
         driver.findElement(By.xpath("//*[@id=\"active\"]")).click();
         driver.quit();
@@ -29,7 +27,6 @@ public class Teachers extends Settings {
     @Test
     public void deleteTeacher() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
-        Login();
         goTo.teachers();
         String actual = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[2]")).getText();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[1]/span[2]")).click();
@@ -55,7 +52,6 @@ public class Teachers extends Settings {
     @Test
     public void deleteSomeTeacher() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
-        Login();
         goTo.teachers();
         String actual = driver.findElement(By.className("ag-cell-value")).getText();
         goTo.selectFirstGroup();
@@ -77,7 +73,6 @@ public class Teachers extends Settings {
     @Test
     public void addNewTeacher() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
-        Login();
         goTo.teachers();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/div/div/button[3]")).click();
         driver.findElement(By.xpath("//*[@id=\"surname\"]")).sendKeys("Прізвище");
@@ -100,13 +95,12 @@ public class Teachers extends Settings {
     @Test
     public void AddANewTeacherWithoutEnteringData() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
-        Login();
         goTo.teachers();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/div/div/button[3]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/add-teacher/modal-wrapper/div/div/div/div[3]/button[1]")).click();
         WebDriverWait wait = new WebDriverWait(driver, 2);
         Alert alert = driver.switchTo().alert();
-        if ( alert.getText().contains("Перевірте введені дані на правильність!")) {
+        if (alert.getText().contains("Перевірте введені дані на правильність!")) {
             alert.accept();
         } else {
             Assert.fail();
@@ -117,7 +111,6 @@ public class Teachers extends Settings {
     @Test
     public void addANewTeacherIfExist() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
-        Login();
         goTo.teachers();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/div/div/button[3]")).click();
         driver.findElement(By.xpath("//*[@id=\"surname\"]")).sendKeys("Прізвище");
@@ -136,7 +129,6 @@ public class Teachers extends Settings {
     @Test
     public void sortField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
-        Login();
         goTo.teachers();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/div/span[1]")).click();
@@ -146,7 +138,6 @@ public class Teachers extends Settings {
     @Test
     public void searchByOneField() throws InterruptedException {
         GoTo goTo = new GoTo(driver);
-        Login();
         goTo.teachers();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
         driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[1]/div[2]/div/div/div[1]/div[2]/span/span")).click();
@@ -154,7 +145,7 @@ public class Teachers extends Settings {
         search.click();
         search.sendKeys("Карапетян");
         Thread.sleep(2000);
-        String expected= driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[2]")).getText();
+        String expected = driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-teachers/div/div/div/div/ag-grid-angular/div/div[1]/div/div[3]/div[2]/div/div/div[1]/div[1]/span/span[2]")).getText();
         assertThat("Карапетян", containsString(expected));
         driver.quit();
     }
