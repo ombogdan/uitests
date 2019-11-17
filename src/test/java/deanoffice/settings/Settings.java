@@ -17,7 +17,7 @@ public class Settings {
     protected ChromeDriver driver;
 
     @Before
-    public void setup() {
+    public void setupAndLogin() {
         ChromeOptions ops = new ChromeOptions();
         ops.addArguments("--disable-notifications");
         WebDriverManager.chromedriver().setup();
@@ -39,6 +39,6 @@ public class Settings {
 
     @After
     public void quit() {
-        driver.quit();
+        //driver.quit();
     }
 }

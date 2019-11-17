@@ -1,15 +1,12 @@
 package deanoffice.beginningYear.departments;
 
-import deanoffice.settings.GoTo;
 import deanoffice.settings.Settings;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.core.StringContains.containsString;
 

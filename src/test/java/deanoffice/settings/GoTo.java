@@ -11,25 +11,9 @@ public class GoTo {
         this.driver = driver;
     }
 
-    public void groups() {
-        driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();
-        driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[3]")).click();
-    }    public void active() {
-        driver.findElement(By.xpath("//*[@id=\"sidebar\"]/div[2]/div/div/ul/li[7]/a/tab-heading")).click();
-    }
-
-    public void edit() {
-        driver.findElement(By.xpath("//*[@id=\"app\"]/div/app-group/div/div/div/div/div/div/div/button[2]")).click();
-    }
-
-
 
     public void selectFirstGroup() {
         driver.findElement(By.className("ag-selection-checkbox")).click();
-    }
-
-    public void selectFirstTeacher() {
-        driver.findElement(By.className("ag-icon ag-icon-checkbox-unchecked")).click();
     }
 
     public void inactiveGroups() {
@@ -44,9 +28,6 @@ public class GoTo {
     public void teachers() {
         driver.findElement(By.xpath("//*[@id=\"nav-year-start\"]")).click();
         driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[6]")).click();
-    }
-    public void departments() {
-        driver.findElement(By.xpath("//*[@id=\"navbarSupportedContent\"]/ul[1]/li[1]/div/a[7]")).click();
     }
 
 }
