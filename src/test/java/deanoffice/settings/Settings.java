@@ -23,6 +23,7 @@ public class Settings {
         WebDriverManager.chromedriver().setup();
         driver = new ChromeDriver(ops);
         driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.get("http://localhost:4200/login");
         WebElement username = driver.findElementByName("username");
         WebElement password = driver.findElementByName("password");
