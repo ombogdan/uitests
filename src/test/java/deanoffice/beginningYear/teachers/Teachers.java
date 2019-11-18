@@ -89,7 +89,6 @@ public class Teachers extends Settings {
         } else {
             Assert.fail();
         }
-        driver.quit();
     }
 
     @Test
