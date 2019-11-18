@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/specializations/SpecializationsPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/teachers/TeachersPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/specializations/Specializations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/specializations/Specializations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/teachers/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/teachers/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/settings/GoTo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/settings/Settings.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -59,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Specializations.createNewSpecializations">
+  <component name="RunManager" selected="JUnit.Teachers.searchByOneField">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -77,95 +78,95 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Courses.sortField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Teachers.AddANewTeacherWithoutEnteringData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.courses.*" />
+          <option name="PATTERN" value="deanoffice.beginningYear.teachers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.courses" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.courses.Courses" />
-      <option name="METHOD_NAME" value="sortField" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.teachers" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.teachers.Teachers" />
+      <option name="METHOD_NAME" value="AddANewTeacherWithoutEnteringData" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Groups.searchByOneField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Teachers.addNewTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.groups.*" />
+          <option name="PATTERN" value="deanoffice.beginningYear.teachers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.groups" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.groups.Groups" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.teachers" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.teachers.Teachers" />
+      <option name="METHOD_NAME" value="addNewTeacher" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teachers.deleteSomeTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.teachers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.teachers" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.teachers.Teachers" />
+      <option name="METHOD_NAME" value="deleteSomeTeacher" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teachers.deleteTeacher" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.teachers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.teachers" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.teachers.Teachers" />
+      <option name="METHOD_NAME" value="deleteTeacher" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Teachers.searchByOneField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.beginningYear.teachers.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.teachers" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.teachers.Teachers" />
       <option name="METHOD_NAME" value="searchByOneField" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Specializations.createNewSpecializations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.specializations.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.specializations" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.specializations.Specializations" />
-      <option name="METHOD_NAME" value="createNewSpecializations" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Specializations.searchByOneField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.specializations.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.specializations" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.specializations.Specializations" />
-      <option name="METHOD_NAME" value="searchByOneField" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Specializations.sortField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.specializations.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.specializations" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.specializations.Specializations" />
-      <option name="METHOD_NAME" value="sortField" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -198,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Specializations.createNewSpecializations" />
-        <item itemvalue="JUnit.Specializations.searchByOneField" />
-        <item itemvalue="JUnit.Specializations.sortField" />
-        <item itemvalue="JUnit.Courses.sortField" />
-        <item itemvalue="JUnit.Groups.searchByOneField" />
+        <item itemvalue="JUnit.Teachers.searchByOneField" />
+        <item itemvalue="JUnit.Teachers.AddANewTeacherWithoutEnteringData" />
+        <item itemvalue="JUnit.Teachers.addNewTeacher" />
+        <item itemvalue="JUnit.Teachers.deleteSomeTeacher" />
+        <item itemvalue="JUnit.Teachers.deleteTeacher" />
       </list>
     </recent_temporary>
   </component>
@@ -232,7 +233,7 @@
       <workItem from="1573557589823" duration="1624000" />
       <workItem from="1573635503471" duration="1784000" />
       <workItem from="1573813637986" duration="11497000" />
-      <workItem from="1573931359672" duration="17843000" />
+      <workItem from="1573931359672" duration="22736000" />
     </task>
     <servers />
   </component>
