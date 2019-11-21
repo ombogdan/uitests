@@ -27,8 +27,7 @@ public class Courses extends Settings {
         driver.findElement(coursesPage.startYear).click();
         driver.findElement(coursesPage.courses).click();
         driver.findElement(coursesPage.iconMenu).click();
-        WebElement search = driver.findElement(coursesPage.searchInput);
-        search.sendKeys("Алгебра та геометрія");
+        driver.findElement(coursesPage.searchInput).sendKeys("Алгебра та геометрія");
         driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
         String expected = driver.findElement(coursesPage.firstField).getText();
         assertThat("Алгебра та геометрія", containsString(expected));

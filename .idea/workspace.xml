@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="39bd9eb3-003b-4c4f-bcce-1174b7f629b7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/deanoffice/duringTheYear/students/Students.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/deanoffice/duringTheYear/students/StudentsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/teachers/Teachers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/teachers/Teachers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/courses/Courses.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/beginningYear/courses/Courses.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/duringTheYear/students/Students.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/duringTheYear/students/Students.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/duringTheYear/students/StudentsPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/duringTheYear/students/StudentsPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/deanoffice/settings/Settings.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/deanoffice/settings/Settings.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -40,7 +40,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="external.system.task.project.file.to.start" value="$PROJECT_DIR$" />
-    <property name="last_opened_file_path" value="D:/deanoffice/deanoffice-backend" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -60,7 +60,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Students.selectColumnForDisplayed">
+  <component name="RunManager" selected="JUnit.Students.enrollAStudentIfExist">
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -78,7 +78,7 @@
       <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="Students.ents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="Students.editInformationStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="uitests" />
       <extension name="coverage">
         <pattern>
@@ -90,7 +90,64 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.duringTheYear.students" />
       <option name="MAIN_CLASS_NAME" value="deanoffice.duringTheYear.students.Students" />
-      <option name="METHOD_NAME" value="ents" />
+      <option name="METHOD_NAME" value="editInformationStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Students.enrollANewStudent" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.duringTheYear.students.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.duringTheYear.students" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.duringTheYear.students.Students" />
+      <option name="METHOD_NAME" value="enrollANewStudent" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Students.enrollAStudentIfExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.duringTheYear.students.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.duringTheYear.students" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.duringTheYear.students.Students" />
+      <option name="METHOD_NAME" value="enrollAStudentIfExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Students.enrollAStudentWithoutEnteringData" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="uitests" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="deanoffice.duringTheYear.students.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
+      <option name="PACKAGE_NAME" value="deanoffice.duringTheYear.students" />
+      <option name="MAIN_CLASS_NAME" value="deanoffice.duringTheYear.students.Students" />
+      <option name="METHOD_NAME" value="enrollAStudentWithoutEnteringData" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
       <method v="2">
@@ -109,63 +166,6 @@
       <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="PACKAGE_NAME" value="deanoffice.duringTheYear.students" />
       <option name="MAIN_CLASS_NAME" value="deanoffice.duringTheYear.students.Students" />
-      <option name="METHOD_NAME" value="searchByOneField" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Students.searchStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.duringTheYear.students.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.duringTheYear.students" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.duringTheYear.students.Students" />
-      <option name="METHOD_NAME" value="searchStudents" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Students.selectColumnForDisplayed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.duringTheYear.students.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.duringTheYear.students" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.duringTheYear.students.Students" />
-      <option name="METHOD_NAME" value="selectColumnForDisplayed" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="PARAMETERS" value="" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Teachers.searchByOneField" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="uitests" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="deanoffice.beginningYear.teachers.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="PACKAGE_NAME" value="deanoffice.beginningYear.teachers" />
-      <option name="MAIN_CLASS_NAME" value="deanoffice.beginningYear.teachers.Teachers" />
       <option name="METHOD_NAME" value="searchByOneField" />
       <option name="TEST_OBJECT" value="method" />
       <option name="PARAMETERS" value="" />
@@ -199,11 +199,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.Students.selectColumnForDisplayed" />
-        <item itemvalue="JUnit.Students.searchStudents" />
-        <item itemvalue="JUnit.Students.ents" />
+        <item itemvalue="JUnit.Students.enrollAStudentIfExist" />
+        <item itemvalue="JUnit.Students.editInformationStudent" />
+        <item itemvalue="JUnit.Students.enrollAStudentWithoutEnteringData" />
+        <item itemvalue="JUnit.Students.enrollANewStudent" />
         <item itemvalue="JUnit.Students.searchByOneField" />
-        <item itemvalue="JUnit.Teachers.searchByOneField" />
       </list>
     </recent_temporary>
   </component>
@@ -233,7 +233,11 @@
       <workItem from="1573557589823" duration="1624000" />
       <workItem from="1573635503471" duration="1784000" />
       <workItem from="1573813637986" duration="11497000" />
-      <workItem from="1573931359672" duration="29171000" />
+      <workItem from="1573931359672" duration="30636000" />
+      <workItem from="1574187864976" duration="1974000" />
+      <workItem from="1574243373819" duration="182000" />
+      <workItem from="1574268645246" duration="17513000" />
+      <workItem from="1574353644269" duration="2761000" />
     </task>
     <servers />
   </component>
@@ -258,13 +262,8 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/deanoffice/duringTheYear/students/Students.java</url>
-          <line>54</line>
-          <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/deanoffice/duringTheYear/students/Students.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="77" />
+          <line>100</line>
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
